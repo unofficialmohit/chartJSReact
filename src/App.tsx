@@ -1,4 +1,3 @@
-import React from 'react'
 import PieChart from './components/PieChart'
 import {UserData} from "./Data.ts"
 import { Chart, registerables } from 'chart.js'
@@ -10,7 +9,7 @@ Chart.register(...registerables)
 // import {Chart, ArcElement, Tooltip} from 'chart.js'
 // Chart.register(ArcElement,Tooltip);
 const App = () => {
-  const [userData, setUserData] = React.useState({
+  const userData= {
     labels: UserData.map((data) => data.year),
     datasets: [
       {
@@ -41,7 +40,7 @@ const App = () => {
         borderWidth: 2,
       }
     ],
-  });
+  }
   console.log(userData);
   return (
     <div>
