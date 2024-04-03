@@ -44,24 +44,19 @@ const App = () => {
   console.log(userData);
   return (
     <div>
-      <div style={{
-  display: 'flex',
-  justifyContent: 'center',
-  height: '250vh' 
-}}>
-  <div style={{ width: '300px' }}>
-    <div style={{border:"1px solid black",padding:"10px",margin:"5px"}}><div style={{textAlign:"center",fontSize:"40px"}}>Pie Chart</div><PieChart chartData={userData} /></div>
-    <div style={{border:"1px solid black",padding:"10px",margin:"5px"}}><div style={{textAlign:"center",fontSize:"40px"}}>Line Chart</div><LineChart chartData={userData} /></div>
-    <div style={{border:"1px solid black",padding:"10px",margin:"5px"}}><div style={{textAlign:"center",fontSize:"40px"}}>Bar Chart</div><BarChart chartData={userData} /></div>
-    <div style={{border:"1px solid black",padding:"10px",margin:"5px"}}><div style={{textAlign:"center",fontSize:"40px"}}>Doughnut Chart</div><Doughnut data={userData} /></div>
-    <div style={{border:"1px solid black",padding:"10px",margin:"5px"}}><div style={{textAlign:"center",fontSize:"40px"}}>PolarArea Chart</div><PolarArea data={userData} /></div>
-    <div style={{border:"1px solid black",padding:"10px",margin:"5px"}}><div style={{textAlign:"center",fontSize:"40px"}}>Radar Chart</div><Radar data={userData} /></div>
-    <div style={{border:"1px solid black",padding:"10px",margin:"5px"}}><div style={{textAlign:"center",fontSize:"40px"}}>Scatter Chart</div><Scatter data={userData} /></div>
-    <div style={{border:"1px solid black",padding:"10px",margin:"5px"}}><div style={{textAlign:"center",fontSize:"40px"}}>Bubble Chart</div><Bubble data={userData} /></div>
+     
+  <div style={{display:"flex",height:"300px", justifyContent:"space-evenly", flexWrap:"wrap",alignItems:"center" }}>
+    <div style={{border:"1px solid black",padding:"10px",margin:"10px",width: '300px',height:"400px"}}><div style={{textAlign:"center",fontSize:"40px"}}>Pie Chart</div><PieChart chartData={userData} /></div>
+    <div style={{border:"1px solid black",padding:"10px",margin:"10px",width: '300px',height:"400px"}}><div style={{textAlign:"center",fontSize:"40px"}}>Line Chart</div><LineChart chartData={userData} /></div>
+    <div style={{border:"1px solid black",padding:"10px",margin:"10px",width: '300px',height:"400px"}}><div style={{textAlign:"center",fontSize:"40px"}}>Bar Chart</div><BarChart chartData={userData} /></div>
+    <div style={{border:"1px solid black",padding:"10px",margin:"10px",width: '300px',height:"400px"}}><div style={{textAlign:"center",fontSize:"40px"}}>Doughnut Chart</div><Doughnut data={userData} /></div>
+    <div style={{border:"1px solid black",padding:"10px",margin:"10px",width: '300px',height:"400px"}}><div style={{textAlign:"center",fontSize:"40px"}}>PolarArea Chart</div><PolarArea data={userData} /></div>
+    <div style={{border:"1px solid black",padding:"10px",margin:"10px",width: '300px',height:"400px"}}><div style={{textAlign:"center",fontSize:"40px"}}>Radar Chart</div><Radar data={userData} /></div>
+    <div style={{border:"1px solid black",padding:"10px",margin:"10px",width: '300px',height:"400px"}}><div style={{textAlign:"center",fontSize:"40px"}}>Scatter Chart</div><Scatter data={userData} /></div>
+    <div style={{border:"1px solid black",padding:"10px",margin:"10px",width: '300px',height:"400px"}}><div style={{textAlign:"center",fontSize:"40px"}}>Bubble Chart</div><Bubble data={userData} /></div>
   </div>
 </div>
 
-    </div>
   )
 }
 export default App
